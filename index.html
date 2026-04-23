@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hakkımda</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome (ikonlar) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Kendi stillerimiz -->
+  <link href="CSS/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+    <i class="fas fa-anchor me-2"></i> MAA
+</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Hakkımda</a></li>
+          <li class="nav-item"><a class="nav-link" href="ozgecmis.html">Özgeçmiş</a></li>
+          <li class="nav-item"><a class="nav-link" href="sehrim.html">Şehrim</a></li>
+          <li class="nav-item"><a class="nav-link" href="miras.html">Mirasımız</a></li>
+          <li class="nav-item"><a class="nav-link" href="ilgi.html">İlgi Alanlarım</a></li>
+          <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Giriş</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- İÇERİK BURAYA GELECEK -->
+  <main class="container my-5">
+    <!-- PROFİL BÖLÜMÜ -->
+<section class="row align-items-center mb-5">
+
+  <!-- Sol: Fotoğraf -->
+  <div class="col-md-3 text-center">
+    <img src="IMG/benresim.jpg" alt="Profil Fotoğrafı" class="profil-foto">
+  </div>
+
+  <!-- Sağ: Bilgi -->
+  <div class="col-md-9">
+    <h1>Muhammet Ali Alçı</h1>
+    <p class="lead">Sakarya Üniversitesi — Bilgisayar Mühendisliği</p>
+    <p>Trabzon doğumluyum, Karadeniz'in enerjisini ve Trabzonspor aşkını içimde taşıyorum. 
+Sakarya Üniversitesi'nde Bilgisayar Mühendisliği okurken bir yandan kod yazıyor, 
+bir yandan fotoğraf makinemi elimden bırakmıyor, bir yandan da kitapların arasında kayboluyorum.</p>
+
+  <!-- Sosyal Medya Butonları -->
+    <div class="d-flex gap-3 mt-3">
+      <a href="https://github.com/" target="_blank" class="btn btn-dark btn-sosyal">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="https://instagram.com/" target="_blank" class="btn btn-danger btn-sosyal">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="mailto:mail@gmail.com" class="btn btn-primary btn-sosyal" style="background-color: #199e72; color: white; border: none;">
+        <i class="fas fa-envelope"></i> E-posta
+      </a>
+      <a href="https://linkedin.com/in/muhammet-ali-alçı-1a4a8431b" target="_blank" class="btn btn-primary btn-sosyal">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+    </div>
+  </div>
+<!-- Badge'ler -->
+<div class="d-flex flex-wrap gap-2 mt-5">
+    <span class="badge-ozellik">
+        <i class="fas fa-laptop-code me-1"></i> Web Developer
+    </span>
+    <span class="badge-ozellik">
+        <i class="fas fa-camera me-1"></i> Fotoğrafçı
+    </span>
+    <span class="badge-ozellik">
+        <i class="fas fa-graduation-cap me-1"></i> Öğrenci
+    </span>
+    <span class="badge-ozellik">
+        <i class="fas fa-book me-1"></i> Kitap Kurdu
+    </span>
+</div>
+    
+</section>
+
+<!-- HOBİLER & ETKİNLİKLER -->
+<section class="mb-5">
+  <h2 class="mb-4">Hobiler & Etkinlikler</h2>
+  <div class="row g-3">
+
+    <div class="col-md-4 col-sm-6">
+      <div class="card hobi-kart-yeni">
+        <img src="IMG/Karadeniz.jpg" alt="Fotoğrafçılık" class="hobi-img">
+        <div class="hobi-etiket">Fotoğrafçılık</div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6">
+      <div class="card hobi-kart-yeni">
+        <img src="IMG/Kizkulesi.jpeg" alt="Seyahat" class="hobi-img">
+        <div class="hobi-etiket">Seyahat</div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6">
+      <div class="card hobi-kart-yeni">
+        <img src="IMG/plaak.jpeg" alt="Müzik" class="hobi-img">
+        <div class="hobi-etiket">Müzik</div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6">
+      <div class="card hobi-kart-yeni">
+        <img src="IMG/kütüphane1.jpg" alt="Kitap" class="hobi-img">
+        <div class="hobi-etiket">Kitap</div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6">
+      <div class="card hobi-kart-yeni">
+        <img src="IMG/Adana.jpeg" alt="Keşif" class="hobi-img">
+        <div class="hobi-etiket">Keşif</div>
+      </div>
+    </div>
+
+  <div class="col-md-4 col-sm-6">
+     <div class="card hobi-kart-yeni">
+      <img src="IMG/yazılım 2.jpg" alt="Yazılım" class="hobi-img">
+      <div class="hobi-etiket">Yazılım</div>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+<!-- HAKKIMDA -->
+<section class="mb-5 hakkimda-bolum">
+  <h2 class="mb-3">Hakkımda</h2>
+  <p>Trabzon'un dağları ve denizi arasında 2006 yılında dünyaya geldim.Birkaç yıl Trabzonda yaşadıktan sonra Gaziantep'e taşındık. 
+    Gaziantepte bulunduğum sürece çok kişiyle tanıştım ve unutamayacağım dostluklar edindim  ve tam olarak 7 sene Mehmet Görmez 
+    İmam Hatip lisesinde eğitim gördüm. okulda aldığım eğitim hem karakterimi hem de bakış açımı şekillendirdi. 
+    Gaziantep'te geçirdiğim dönem ise bana farklı bir kültürü, farklı bir hayatı tattırdı. 
+    Ailem şu an Kocaeli'nde yaşıyor, ben de Sakarya Üniversitesi'nde Bilgisayar Mühendisliği okuyorum.
+  </p>
+  <p>Üniversite hayatım yazılıma olan tutkumu daha da alevlendirdi. Kod yazmak benim için sadece bir beceri değil, 
+    bir düşünme biçimi. Boş zamanlarımda fotoğraf çekiyor, kitap okuyor, müzikle ruhumu dinlendiriyorum. Hayatın her anında, 
+    her şehirde, her insanda öğrenilecek bir şey olduğuna inanıyorum.</p>
+</section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+  <div class="d-flex justify-content-center gap-3 mb-2">
+    <a href="https://github.com/" target="_blank" class="text-white fs-5"><i class="fab fa-github"></i></a>
+    <a href="https://instagram.com/" target="_blank" class="text-white fs-5"><i class="fab fa-instagram"></i></a>
+    <a href="mailto:mail@gmail.com" class="text-white fs-5"><i class="fas fa-envelope"></i></a>
+    <a href="https://linkedin.com/in/kullaniciadin" target="_blank" class="text-white fs-5">
+    <i class="fab fa-linkedin"></i></a>
+  </div>
+  <p class="mb-0 text-muted small">© 2026 Muhammet Ali Alçı</p>
+</footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
