@@ -1,15 +1,284 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <title>Web Projesi</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Özgeçmiş</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome (ikonlar) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Kendi stillerimiz -->
+  <link href="CSS/style.css" rel="stylesheet">
 </head>
 <body>
-    
+      <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+    <i class="fas fa-anchor me-2"></i> MAA
+</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Hakkımda</a></li>
+          <li class="nav-item"><a class="nav-link active" href="ozgecmis.html">Özgeçmiş</a></li>
+          <li class="nav-item"><a class="nav-link" href="sehrim.html">Şehrim</a></li>
+          <li class="nav-item"><a class="nav-link" href="miras.html">Mirasımız</a></li>
+          <li class="nav-item"><a class="nav-link" href="ilgi.html">İlgi Alanlarım</a></li>
+          <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Giriş</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
 
+<main class="container my-5">
+  <div class="row g-4">
 
+    <!-- SOL BAR (4 sütun) -->
+    <div class="col-md-4">
+        
+        
+        <div class="cv-sol-bar">
 
+            <!-- Profil Bölümü -->
+            <div class="text-center mb-4">
+                 <img src="IMG/CVFotograf.jpeg" alt="Profil" class="profil-foto mb-3">
+                <h4>Muhammet Ali Alçı</h4>
+                <p>Bilgisayar Mühendisliği Öğrencisi</p>
+            </div>
+
+            <!-- İletişim -->
+            <div class="cv-bolum">
+                 <h5><i class="fas fa-address-card me-2"></i>İletişim</h5>
+                    <ul class="list-unstyled">
+                     <li class="mb-2"><i class="fas fa-envelope me-2"></i>alcim279@gmail.com</li>
+                    <li class="mb-2"><i class="fas fa-phone me-2"></i>+90 551 102 76 84</li>
+                    <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>Sakarya, Türkiye</li>
+                    <li class="mb-2"><i class="fab fa-github me-2"></i>github.com/muhammed-ali61</li>
+                </ul>
+            </div>
+
+            <!-- Beceriler -->
+            <div class="cv-bolum">
+              <h5><i class="fas fa-code me-2"></i>Beceriler</h5>
+  
+                <p class="mb-1">HTML & CSS</p>
+                <div class="progress mb-3">
+                    <div class="progress-bar" style="width: 75%">75%</div>
+                </div>
+
+                <p class="mb-1">JavaScript</p>
+                <div class="progress mb-3">
+                    <div class="progress-bar" style="width: 40%">40%</div>
+                </div>
+
+                <p class="mb-1">Bootstrap</p>
+                <div class="progress mb-3">
+                    <div class="progress-bar" style="width: 65%">65%</div>
+                </div>
+
+                <p class="mb-1">PHP</p>
+                <div class="progress mb-3">
+                    <div class="progress-bar" style="width: 50%">50%</div>
+                </div>
+
+                <p class="mb-1">C#</p>
+                <div class="progress mb-3">
+                    <div class="progress-bar" style="width: 60%">60%</div>
+                </div>
+
+                <p class="mb-1">Git & GitHub</p>
+                <div class="progress mb-3">
+                    <div class="progress-bar" style="width: 70%">70%</div>
+                </div>
+
+            </div>
+
+            <!-- Diller -->
+            <div class="cv-bolum">
+              <h5><i class="fas fa-language me-2"></i>Diller</h5>
+            
+                <p class="mb-1">Türkçe</p>
+                <div class="progress mb-3">
+                    <div class="progress-bar" style="width: 100%">Ana Dil</div>
+                </div>
+
+                <p class="mb-1">İngilizce</p>
+                <div class="progress mb-3">
+                    <div class="progress-bar" style="width: 70%">Orta Üstü</div>
+                </div>
+
+            </div>
+
+        </div>
+      
+    </div>
+
+                <!-- SAĞ İÇERİK (8 sütun) -->
+            <div class="col-md-8">
+
+            <!-- Eğitim -->
+            <section class="cv-sag-bolum mb-4">
+                <h3><i class="fas fa-graduation-cap me-2"></i>Eğitim</h3>
+                <div class="cv-timeline">
+
+                <div class="cv-timeline-item">
+                    <div class="cv-timeline-sol">
+                    <p class="cv-okul">Sakarya Üniversitesi</p>
+                    <p class="cv-sehir">Sakarya</p>
+                    <p class="cv-yil">2025 — Devam</p>
+                    </div>
+                    <div class="cv-timeline-nokta"></div>
+                    <div class="cv-timeline-sag">
+                    <h5>Lisans, Bilgisayar Mühendisliği</h5>
+                    <ul>
+                        <li>Yatay geçiş ile kabul edildim.</li>
+                        <li>Web teknolojileri alanında projeler geliştirmekteyim.</li>
+                        <li>Programlama üzerine dersler almaktayım.</li>
+                    </ul>
+                    </div>
+                </div>
+
+                <div class="cv-timeline-item">
+                    <div class="cv-timeline-sol">
+                    <p class="cv-okul">Çukurova Üniversitesi</p>
+                    <p class="cv-sehir">Adana</p>
+                    <p class="cv-yil">2024 — 2025</p>
+                    </div>
+                    <div class="cv-timeline-nokta"></div>
+                    <div class="cv-timeline-sag">
+                    <h5>Hazırlık Eğitimi</h5>
+                    <ul>
+                        <li>Bir yıl süren hazırlık eğitimi aldım.</li>
+                    </ul>
+                    </div>
+                </div>
+
+                <div class="cv-timeline-item">
+                    <div class="cv-timeline-sol">
+                    <p class="cv-okul">Mehmet Görmez İmam Hatip Lisesi</p>
+                    <p class="cv-sehir">Gaziantep</p>
+                    <p class="cv-yil">2018 — 2024</p>
+                    </div>
+                    <div class="cv-timeline-nokta"></div>
+                    <div class="cv-timeline-sag">
+                    <h5>Lise Eğitimi</h5>
+                    <ul>
+                        <li>6 yıl boyunca eğitim gördüm.</li>
+                        <li>Farklı kültürlerle tanışma fırsatı buldum.</li>
+                    </ul>
+                    </div>
+                </div>
+
+                </div>
+            </section>
+
+            <!-- Projeler -->
+            <section class="cv-sag-bolum mb-4">
+                <h3><i class="fas fa-laptop-code me-2"></i>Projeler</h3>
+                <div class="cv-timeline">
+
+                <div class="cv-timeline-item">
+                    <div class="cv-timeline-sol">
+                    <p class="cv-okul">Web Teknolojileri Projesi</p>
+                    <p class="cv-yil">2025</p>
+                    </div>
+                    <div class="cv-timeline-nokta"></div>
+                    <div class="cv-timeline-sag">
+                    <h5>Kişisel Web Sitesi</h5>
+                    <ul>
+                        <li>HTML, CSS, JavaScript, Bootstrap ve PHP ile geliştirildi.</li>
+                        <li>Responsive tasarım ve API entegrasyonu uygulandı.</li>
+                    </ul>
+                    </div>
+                </div>
+
+                <div class="cv-timeline-item">
+                    <div class="cv-timeline-sol">
+                    <p class="cv-okul">Birim Dönüştürücü</p>
+                    <p class="cv-yil">2025</p>
+                    </div>
+                    <div class="cv-timeline-nokta"></div>
+                    <div class="cv-timeline-sag">
+                    <h5>C# Konsol Uygulaması</h5>
+                    <ul>
+                        <li>Statik sınıf yapısı kullanıldı.</li>
+                        <li>8 farklı birim kategorisi eklendi.</li>
+                    </ul>
+                    </div>
+                </div>
+
+                <div class="cv-timeline-item">
+                    <div class="cv-timeline-sol">
+                    <p class="cv-okul">Öğrenci Not Sistemi</p>
+                    <p class="cv-yil">2025</p>
+                    </div>
+                    <div class="cv-timeline-nokta"></div>
+                    <div class="cv-timeline-sag">
+                    <h5>C++ Konsol Uygulaması</h5>
+                    <ul>
+                        <li>100 öğrencilik sınıf simülasyonu yapıldı.</li>
+                        <li>Sınıf ortalaması ve standart sapma hesaplandı.</li>
+                    </ul>
+                    </div>
+                </div>
+
+                <div class="cv-timeline-item">
+                    <div class="cv-timeline-sol">
+                    <p class="cv-okul">Düğün Organizasyonu</p>
+                    <p class="cv-yil">2025</p>
+                    </div>
+                    <div class="cv-timeline-nokta"></div>
+                    <div class="cv-timeline-sag">
+                    <h5>C++ Dosya Tabanlı Uygulama</h5>
+                    <ul>
+                        <li>Düğün bilgileri, davetliler ve organizasyon detayları yönetildi.</li>
+                        <li>Çoklu ve ilişkili dosya kullanımı uygulandı.</li>
+                    </ul>
+                    </div>
+                </div>
+
+                <div class="cv-timeline-item">
+                    <div class="cv-timeline-sol">
+                    <p class="cv-okul">Çizim Uygulaması</p>
+                    <p class="cv-yil">2025</p>
+                    </div>
+                    <div class="cv-timeline-nokta"></div>
+                    <div class="cv-timeline-sag">
+                    <h5>C# Windows Form Uygulaması</h5>
+                    <ul>
+                        <li>Windows Form üzerinde grafik çizim uygulaması geliştirildi.</li>
+                    </ul>
+                    </div>
+                </div>
+
+                </div>
+            </section>
+
+    </div>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="text-white text-center py-4 mt-5">
+  <div class="d-flex justify-content-center gap-3 mb-2">
+    <a href="https://github.com/muhammed-ali61" target="_blank" class="text-white fs-5"><i class="fab fa-github"></i></a>
+    <a href="https://instagram.com/" target="_blank" class="text-white fs-5"><i class="fab fa-instagram"></i></a>
+    <a href="mailto:alcim279@gmail.com" class="text-white fs-5"><i class="fas fa-envelope"></i></a>
+    <a href="https://linkedin.com/in/muhammet-ali-alçı-1a4a8431b" target="_blank" class="text-white fs-5"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <p class="mb-0 text-muted small">© 2026 Muhammet Ali Alçı</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

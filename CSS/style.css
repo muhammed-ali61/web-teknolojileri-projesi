@@ -176,4 +176,103 @@ footer .text-muted {
     color: #888 !important;
     font-size: 13px;
 }
-```
+
+
+
+/* ===== ÖZGEÇMIŞ SAYFASI ===== */
+
+/* Sol bar */
+.cv-sol-bar {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 20px;
+}
+
+/* Bölüm arası ayırıcı */
+.cv-bolum {
+    border-top: 2px solid #f0f0f0;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+/* Sağ bölümler */
+.cv-sag-bolum {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+/* Zaman çizelgesi */
+.cv-timeline {
+    position: relative;
+    padding-left: 20px;
+    border-left: 3px solid #c8a97e;
+}
+
+.cv-timeline-item {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.cv-timeline-nokta {
+    width: 14px;
+    height: 14px;
+    background: #c8a97e;
+    border-radius: 50%;
+    position: absolute;
+    left: -28px;
+    top: 5px;
+}
+
+.cv-timeline-sol {
+    min-width: 150px;
+    color: #888;
+    font-size: 13px;
+}
+
+.cv-okul {
+    font-weight: 700;
+    color: #1a1a2e;
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+.cv-sehir {
+    margin-bottom: 2px;
+}
+
+.cv-yil {
+    color: #c8a97e;
+    font-weight: 600;
+}
+
+.cv-timeline-sag h5 {
+    color: #1a1a2e;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.cv-timeline-sag ul {
+    color: #555;
+    font-size: 14px;
+    padding-left: 18px;
+}
+
+/* Progress bar rengi */
+.progress {
+    height: 8px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+}
+
+.progress-bar {
+    background-color: #c8a97e;
+    border-radius: 10px;
+    font-size: 11px;
+}
