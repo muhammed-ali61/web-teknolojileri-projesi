@@ -276,3 +276,225 @@ footer .text-muted {
     border-radius: 10px;
     font-size: 11px;
 }
+
+
+
+/* ===== ŞEHRİM SAYFASI ===== */
+
+.trabzon-bilgi-kart {
+    background: white;
+    border-radius: 10px;
+    padding: 10px 18px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    color: #1a1a2e;
+}
+
+.trabzon-bilgi-kart i {
+    color: #c8a97e;
+    font-size: 18px;
+}
+
+/* Trabzon Tablo */
+.trabzon-tablo {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
+
+.trabzon-tablo td {
+    padding: 12px 16px;
+    vertical-align: middle;
+    border-color: #f0f0f0;
+}
+
+.trabzon-tablo td:first-child {
+    width: 160px;
+    font-weight: 600;
+    color: #1a1a2e;
+    background: #fafafa;
+}
+
+
+/* Slider */
+.slider-img {
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Slider caption */
+.carousel-caption h5 {
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.4);
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 20px;
+}
+
+
+/* Bilgi Kartları */
+.bilgi-kart {
+    background: white;
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+    height: 100%;
+}
+
+.bilgi-kart:hover {
+    transform: translateY(-8px);
+}
+
+.bilgi-kart-ikon {
+    width: 60px;
+    height: 60px;
+    background: #c8a97e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+}
+
+.bilgi-kart-ikon i {
+    color: white;
+    font-size: 24px;
+}
+
+.bilgi-kart h5 {
+    color: #1a1a2e;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.bilgi-kart p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* ===== TAKIMIMIZ SAYFASI ===== */
+.ts-logo {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.ts-bilgi-kart {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.ts-bilgi-kart:hover {
+    transform: translateY(-5px);
+}
+
+.ts-bilgi-kart i {
+    font-size: 28px;
+    color: #c8a97e;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.ts-bilgi-kart h6 {
+    color: #888;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.ts-bilgi-kart p {
+    color: #1a1a2e;
+    font-weight: 700;
+    font-size: 15px;
+    margin: 0;
+}
+
+.ts-kadro {
+    max-height: 500px;
+    object-fit: contain;
+    width: 65%;
+}
+
+/* Efsane Futbolcular */
+.efsane-kart {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    background: white;
+    text-align: center;
+}
+
+.efsane-kart:hover {
+    transform: translateY(-8px);
+}
+
+.efsane-foto {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.efsane-bilgi {
+    padding: 15px;
+}
+
+.efsane-bilgi h5 {
+    color: #1a1a2e;
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.efsane-bilgi p {
+    color: #c8a97e;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Başarılar */
+.basari-kart {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.basari-kart:hover {
+    transform: translateY(-8px);
+}
+
+.basari-sayi {
+    font-size: 52px;
+    font-weight: 900;
+    color: #c8a97e;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.basari-baslik {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
