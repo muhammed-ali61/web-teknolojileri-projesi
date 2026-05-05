@@ -498,3 +498,24 @@ footer .text-muted {
     font-weight: 600;
     letter-spacing: 1px;
 }
+
+
+
+/* ===== İLETİŞİM SAYFASI ===== */
+.iletisim-form-kart {
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+/* Radio ve Checkbox */
+.form-check-input {
+    border: 2px solid #c8a97e;
+    background-color: white;
+}
+
+.form-check-input:checked {
+    background-color: #c8a97e;
+    border-color: #c8a97e;
+}

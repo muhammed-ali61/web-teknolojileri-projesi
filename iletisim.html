@@ -1,13 +1,154 @@
 <!DOCTYPE html>
-
+<html lang="tr">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İletişim</title>
 
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome (ikonlar) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Kendi stillerimiz -->
+  <link href="CSS/style.css" rel="stylesheet">
 </head>
 <body>
+      <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+    <i class="fas fa-anchor me-2"></i> MAA
+</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Hakkımda</a></li>
+          <li class="nav-item"><a class="nav-link" href="ozgecmis.html">Özgeçmiş</a></li>
+          <li class="nav-item"><a class="nav-link" href="sehrim.html">Şehrim</a></li>
+          <li class="nav-item"><a class="nav-link" href="Takım.html">Takımımız</a></li>
+          <li class="nav-item"><a class="nav-link" href="ilgi.html">İlgi Alanlarım</a></li>
+          <li class="nav-item"><a class="nav-link active" href="iletisim.html">İletişim</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Giriş</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <main class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+
+      <div class="iletisim-form-kart">
+        <h2 class="mb-4">İletişim Formu</h2>
+
+        <form id="iletisimForm" action="PHP/form_isle.php" method="POST">
+
+            <!-- Ad & Soyad -->
+            <div class="row g-3 mb-3">
+            <div class="col-md-6">
+                <label for="ad" class="form-label">Ad</label>
+                <input type="text" id="ad" name="ad" class="form-control" placeholder="Adınız">
+            </div>
+            <div class="col-md-6">
+                <label for="soyad" class="form-label">Soyad</label>
+                <input type="text" id="soyad" name="soyad" class="form-control" placeholder="Soyadınız">
+            </div>
+            </div>
+            
+            <!-- Email & Telefon -->
+            <div class="row g-3 mb-3">
+            <div class="col-md-6">
+                <label for="email" class="form-label">E-posta</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="ornek@gmail.com">
+            </div>
+            <div class="col-md-6">
+                <label for="telefon" class="form-label">Telefon</label>
+                <input type="tel" id="telefon" name="telefon" class="form-control" placeholder="05XX XXX XX XX">
+            </div>
+            </div>
+
+            <!-- Konu -->
+            <div class="mb-3">
+            <label for="konu" class="form-label">Konu</label>
+            <select id="konu" name="konu" class="form-select">
+                <option value="">Konu Seçiniz...</option>
+                <option value="genel">Genel</option>
+                <option value="isbirligi">İş Birliği</option>
+                <option value="teknik">Teknik Destek</option>
+                <option value="diger">Diğer</option>
+            </select>
+            </div>
+
+            <!-- Cinsiyet -->
+            <div class="mb-3">
+            <label class="form-label">Cinsiyet</label>
+            <div class="d-flex gap-4">
+            <div class="form-check">
+                <input type="radio" id="erkek" name="cinsiyet" value="erkek" class="form-check-input">
+                <label for="erkek" class="form-check-label">Erkek</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" id="kadin" name="cinsiyet" value="kadin" class="form-check-input">
+                <label for="kadin" class="form-check-label">Kadın</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" id="belirtmek" name="cinsiyet" value="belirtmek_istemiyorum" class="form-check-input">
+                <label for="belirtmek" class="form-check-label">Belirtmek İstemiyorum</label>
+            </div>
+           </div>
+         </div>
+
+         <!-- Mesaj -->
+        <div class="mb-3">
+            <label for="mesaj" class="form-label">Mesaj</label>
+            <textarea id="mesaj" name="mesaj" class="form-control" rows="4" placeholder="Mesajınızı yazınız..."></textarea>
+        </div>
+
+        <!-- Sözleşme -->
+        <div class="mb-3">
+        <div class="form-check">
+            <input type="checkbox" id="sozlesme" name="sozlesme" class="form-check-input">
+            <label for="sozlesme" class="form-check-label">
+            Kişisel verilerimin işlenmesini kabul ediyorum.
+            </label>
+        </div>
+        </div>
 
 
 
+            <!-- Butonlar -->
+            <div class="d-flex gap-3 mt-4 flex-wrap">
+            <button type="button" onclick="jsDogrula()" class="btn btn-dark">
+                <i class="fas fa-code me-2"></i> JS ile Doğrula
+            </button>
+            <div id="vueApp">
+                <button type="button" @click="vueDogrula()" class="btn btn-primary">
+                    <i class="fab fa-vuejs me-2"></i> Vue ile Doğrula
+                </button>
+            </div>
+            <button type="submit" class="btn btn-success">
+                <i class="fas fa-paper-plane me-2"></i> Gönder
+            </button>
+            <button type="reset" class="btn btn-danger">
+                <i class="fas fa-redo me-2"></i> Temizle
+            </button>
+            </div>
+        </form>
+      </div>
 
+    </div>
+  </div>
+</main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+<script src="JS/main.js"></script>
+<script src="JS/vue-form.js"></script>
 
 </body>
 </html>
