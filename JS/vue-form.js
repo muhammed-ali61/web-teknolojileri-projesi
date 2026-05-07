@@ -56,6 +56,8 @@ window.onload = function() {
                     document.getElementById('iletisimForm').submit();
                 }
             }
+
         }
+
     });
 }
