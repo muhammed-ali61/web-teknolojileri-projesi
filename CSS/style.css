@@ -139,7 +139,7 @@ h2::after {
 }
 
 /* ===== HAKKIMDA ===== */
-.hakkimda-bolum {
+.yazi-tablo {
     background: white;
     border-radius: 15px;
     padding: 35px;
@@ -148,7 +148,7 @@ h2::after {
     border-bottom: 5px solid #800020;
 }
 
-.hakkimda-bolum p {
+.yazi-tablo p {
     font-size: 16px;
     line-height: 1.9;
     color: #444;
@@ -281,6 +281,41 @@ footer .text-muted {
 
 /* ===== ŞEHRİM SAYFASI ===== */
 
+.sehir-bilgi-kart {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.sehir-bilgi-kart:hover {
+    transform: translateY(-5px);
+}
+
+.sehir-bilgi-kart i {
+    font-size: 28px;
+    color: #c8a97e;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.sehir-bilgi-kart h6 {
+    color: #888;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.sehir-bilgi-kart p {
+    color: #1a1a2e;
+    font-weight: 700;
+    font-size: 15px;
+    margin: 0;
+}
+
 .trabzon-bilgi-kart {
     background: white;
     border-radius: 10px;
@@ -391,7 +426,7 @@ footer .text-muted {
 }
 
 .ts-bilgi-kart {
-    background: white;
+    background: linear-gradient(135deg, #800020 50%, #003087 50%);
     border-radius: 12px;
     padding: 20px;
     text-align: center;
@@ -411,7 +446,7 @@ footer .text-muted {
 }
 
 .ts-bilgi-kart h6 {
-    color: #888;
+    color: #fff;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -419,7 +454,7 @@ footer .text-muted {
 }
 
 .ts-bilgi-kart p {
-    color: #1a1a2e;
+    color: #fff;
     font-weight: 700;
     font-size: 15px;
     margin: 0;
